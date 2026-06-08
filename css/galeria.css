@@ -1,0 +1,1934 @@
+/* TIPOGRAFÍA Y FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+
+  
+}
+
+.container {
+  height: 100vh;
+
+}
+
+
+
+
+
+
+
+.section {
+  /* Posicionamiento / Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  /* Tamaño y Espaciado */
+  margin: 0;
+  padding: 5vh 10vw;
+  /* repetido abajo */
+  padding: 20px;
+  /* repetido arriba */
+  max-width: none;
+  /* repetido abajo */
+  max-width: 100%;
+  /* repetido arriba */
+
+  /* Fondo / Estilo Visual */
+  background-color: #000;
+  /* Efectos / Interacciones */
+  transition: background-color 0.6s ease, color 0.6s ease;
+  user-select: none;
+
+}
+
+
+
+
+
+
+
+
+
+/* Sección de la barra de navegación */
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  width: 100%;
+  padding: 1%;
+  background-color: #fff0;
+  color: white;
+  transition: background-color 0.6s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+  height: 7%;
+  transition: top 0.3s ease-in-out, background-color 0.6s ease-in-out;
+}
+.navbar.scrolled {
+  background-color: #0d0d0d66;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul li {
+
+  margin: 0 20px;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+color: #FFF;
+}
+
+ul {
+
+  display: flex;
+  flex-direction: row;
+  gap: 43px;
+
+
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.contenido-barra-navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.Enlaces-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Enlaces-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  font-family: "Montserrat", sans-serif;
+}
+
+.enlace-A{
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+
+.enlace-b{
+white-space: nowrap;
+}
+
+
+.seccion-logo {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  height: 8vh;
+  width: 4vw;
+
+
+  overflow: clip;
+}
+
+
+.logo-1 {
+  position: relative;
+  height: 48.2px;
+  transition: 0.3s ease;
+}
+
+.logo-1:hover {
+  opacity: 0.8;
+
+}
+
+
+
+
+
+
+
+
+
+
+.iconos-2 {
+
+  position: absolute;
+  left: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+}
+
+
+.enlaces {
+
+  display: flex;
+  flex-direction: row;
+  gap: 43px;
+}
+
+.enlace-1{
+
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.enlace-A:hover {
+  color: rgb(196, 192, 192);
+}
+
+.idioma {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.enlace-1:hover {
+
+  color: rgb(196, 192, 192);
+}
+
+
+
+
+.contenido-barra-navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 0 20px;
+
+}
+
+.Enlaces-1,
+.Enlaces-2 {
+  display: flex;
+  gap: 20px;
+  font-size: 0.8rem;
+  align-items: center;
+  margin-left: 7%;
+}
+
+
+.logo {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 5%;
+}
+
+.botón-1 {
+  height: fit-content;
+  width: fit-content;
+  background-color: #fff;
+  align-items: center;
+  display: flex;
+  padding: 10px 20px 10px 20px;
+  color: black;
+  white-space: nowrap;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.botón-1:hover {
+  background-color: #e0e0e0;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Introducción del modelo Novaire */
+.section:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  justify-content: flex-end;
+  color: #FFF;
+  font-family: "Nunito Sans", sans-serif;
+  width: 100%;
+  padding: 0vh;
+}
+
+.contenidor-1{
+height: auto;
+width: 100%;
+overflow: clip;
+z-index: 1;
+}
+
+.fondo-video{
+  width: 100%;
+}
+
+
+.titulo-seccion {
+  position: absolute;
+  color: white;
+  text-align: center;
+  gap: 11px;
+  display: flex;
+  flex-direction: column;
+  z-index: 9;
+  overflow: clip;
+  top: 85%;
+}
+
+.entrada-principal__titulo-1 {
+  font-weight: 400;
+  font-size: 3rem;
+  font-family: "Michroma", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Introducción de la página */
+.section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 12vh;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+
+
+.Colección-De-Descripción {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.explicación {
+  color: #ffffffc9;
+  width: 59%;
+  line-height: 1.6rem;
+}
+
+.La-identidad-de-la-marca {
+  font-size: 5.2rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-family: "Michroma", sans-serif;
+}
+
+.Enlace-de-la-colección {
+
+  font-size: 13px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.Descripción-de-la-identidade {
+  color: #b9b8b8;
+  margin-bottom: 12px;
+}
+
+
+.El-subrayado {
+
+  height: 1px;
+  width: 100%;
+
+
+  background-color: #000;
+}
+
+
+.titulo-coche {
+  position: absolute;
+  color: white;
+  writing-mode: vertical-rl;
+  font-family: "Michroma", sans-serif;
+  font-size: 3.2rem;
+  margin-top: 31px;
+  margin-right: 16px;
+  font-weight: bolder;
+}
+
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.fade-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Información sobre el modelo */
+.section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  max-width: 100%;
+  background-color: #000;
+  transition: background-color 0.6s ease, color 0.6s ease;
+  width: 100%;
+}
+
+.aston {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: fit-content;
+  background-color: #000;
+}
+
+.mel {
+  width: 60vw;
+
+  height: 100%;
+  object-fit: cover;
+  transition: width 0.3s ease-out;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.descripcion-introduccion {
+  margin-left: 4%;
+  margin-top: 38%;
+  z-index: 7;
+  position: absolute;
+  color: #fff;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.seccion-introduccion {
+  display: flex;
+  justify-content: end;
+}
+
+
+
+.titulo-introduccion {
+  font-size: 2.3rem;
+  margin-bottom: 29px;
+  font-family: "Michroma", sans-serif;
+  font-weight: bold;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.texto-introduccion-1 {
+  font-size: 1rem;
+  font-weight: lighter;
+  text-align: start;
+  width: 32%;
+  color: #ffffffe0;
+}
+
+.texto-introduccion {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  width: 100%;
+  align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Información sobre el vehículo */
+.section:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20vh;
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  padding-bottom: 11vh;
+}
+
+
+
+.La-identidad-de-la-marca-01 {
+  font-size: 3.5rem;
+  color: white;
+  font-family: "Michroma", sans-serif;
+  margin-bottom: 31px;
+}
+
+
+.Colección-De-Descripción-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.explicación-02 {
+  color: #ffffffc9;
+  width: 45%;
+  line-height: 1.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section:nth-child(5) {
+
+  display: flex;
+  padding-top: 6vh;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  color: #ffffff;
+  font-family: "Michroma", sans-serif;
+}
+
+
+.envoltorio-contenido {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.envoltorio-texto {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 12px;
+}
+
+
+.Encabezado {
+  margin-bottom: 24px;
+  width: 83%;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 325;
+  letter-spacing: -1.28px;
+  line-height: 40px;
+}
+
+
+.Contenido {
+  width: 87%;
+  margin-bottom: 58px;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -.5px;
+  line-height: 24px;
+  text-align: start;
+  word-break: keep-all;
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn-descubre-coleccion {
+  font-size: 0.6rem;
+  text-decoration: none;
+  color: #fff;
+  gap: 9px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+
+.envoltorio-video-1{
+  height: 72vh;
+  width: 63vw;
+  overflow: clip;
+}
+
+
+.video-1{
+  height: 100%;
+}
+
+.contenedor-boton {
+  padding: 12px 20px 12px 20px;
+  text-decoration: none;
+  width: fit-content;
+  border-radius: 30px;
+  font-weight: 400;
+  color: #000000;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  gap: 9px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+
+.contenedor-boton:hover{
+  background-color: #00000000;
+color: white;
+border: 1px solid white;
+}
+
+
+.flecha-diagonal {
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+
+
+.contenedor-boton:hover .flecha-diagonal {
+  transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section:nth-child(6) {
+
+  display: flex;
+  padding-top: 6vh;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  color: #ffffff;
+  font-family: "Michroma", sans-serif;
+}
+
+.envoltorio-contenido-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 54px;
+}
+
+
+.imagen-1 {
+  height: 100%;
+}
+
+
+.envoltorio-imagen-1 {
+  height: 72vh;
+  width: 63vw;
+  overflow: clip;
+}
+
+
+.Contenido-1 {
+  width: 87%;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -.5px;
+  line-height: 24px;
+  text-align: start;
+  word-break: keep-all;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Imágenes del modelo */
+.section:nth-child(7) {
+  display: flex;
+  align-items: center;
+  padding-top: 20vh;
+  padding-bottom: 5vh;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.contenedor-imagenes-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 22px;
+  color: white;
+}
+
+.detalle-imagen {
+  color: #ffffffcf;
+  width: 50%;
+}
+
+
+
+
+.titulo-imagenes{
+  font-size: 4em;
+  line-height: 1;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section:nth-child(8) {
+  display: flex;
+  align-items: center;
+  padding-top: 10vh;
+  padding-bottom: 21vh;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+
+
+.section8 img {
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.carrusel-imagenes {
+  position: relative;
+  width: 68%;
+  margin: auto;
+}
+
+
+.contenedor-imagenes {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s ease;
+  padding: 20px 60px;
+  will-change: transform;
+}
+
+.contenedor-imagenes img {
+  flex: 0 0 100%;
+  max-width: 1150px;
+  height: 692px;
+  object-fit: cover;
+  transform: scale(0.9);
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.contenedor-imagenes img.active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.contenedor-imagenes,
+.carrusel-imagenes{
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grab;
+}
+
+.contenedor-imagenes:active {
+  cursor: grabbing;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Vídeo promocional del vehículo */
+.section:nth-child(9) {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 17vh;
+  padding-bottom: 14vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  background-color: #ffffff;
+  justify-content: center;
+}
+
+
+.titulo-descubrir {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 22px;
+  color: rgb(0, 0, 0);
+}
+
+
+
+.explicación-01 {
+  color: #000000c9;
+  width: 79%;
+  line-height: 1.6rem;
+}
+
+
+
+.La-identidad-de-la-marca-02 {
+  font-size: 3.3rem;
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 31px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section:nth-child(10) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  max-width: 100%;
+  background-color: #fff;
+  transition: background-color 0.6s ease, color 0.6s ease;
+  width: 100%;
+  padding-bottom: 12vh;
+  padding-top: 1vh;
+  padding-left: 17vh;
+  padding-right: 17vh;
+}
+
+
+.apartado-video {
+
+  z-index: 7;
+  position: absolute;
+  color: #fff;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.circulo {
+  transition: opacity 0.4s ease;
+}
+
+
+.seccion-video {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.mel-0 {
+  width: 100%;
+}
+
+
+
+
+
+
+.seccion-video-1 {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.circulo {
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  background-color: rgba(253, 253, 253, 0.274);
+}
+
+
+.circulo:hover {
+  background-color: rgba(253, 253, 253, 0.5);
+}
+
+
+.circulo {
+  transition: opacity 0.4s ease;
+}
+
+.circulo.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Detalles del coche */
+.section:nth-child(11) {
+  display: flex;
+  align-items: start;
+  padding-top: 22vh;
+  padding-bottom: 13vh;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  padding-right: 18vh;
+  padding-left: 18vh;
+}
+
+.titulo-principal {
+  font-size: 3.5rem;
+  text-align: start;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section:nth-child(12) {
+  display: flex;
+  align-items: end;
+  color: #000000;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 0vh;
+  padding-bottom: 10vh;
+  padding-left: 1vh;
+  padding-right: 0vh;
+  background-color: white;
+}
+
+.slider img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  cursor: grab;
+  width: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  flex-direction: row;
+  gap: 27vh;
+  padding-left: 164px;
+  padding-right: 0vw;
+}
+
+
+
+
+.slider .dragging {
+  pointer-events: none;
+}
+
+.slider:active {
+  cursor: grabbing;
+}
+
+
+.panel-visual{
+  display: flex;
+  flex-direction: row;
+  color: #000;
+}
+
+
+.slider>div {
+  flex: 0 0 auto;
+  position: relative;
+  width: 76vw;
+  gap: 159px;
+  align-items: center;
+}
+
+
+.bloque-informativo {
+  position: relative;
+  color: black;
+  font-size: 1.2rem;
+  text-align: center;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.encabezado-caracteristica {
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-family: "Michroma", sans-serif;
+}
+
+
+.descripcion-caracteristica{
+  width: 82%;
+  text-align: start;
+  font-size: 0.95rem;
+  font-weight: lighter;
+}
+
+
+.fotografia-vehiculo {
+  height: 100%;
+}
+
+
+.marco-imagen {
+  width: 23vw;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 0rem;
+}
+
+
+
+.slider-1 {
+  background: #000000;
+  height: 134pt;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  user-select: none;
+  touch-action: none;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+.slider-1 .slide-track-1 {
+  animation: scroll-l 30s linear infinite;
+  display: flex;
+  width: 3500px;
+  gap: 111px;
+}
+
+.slider-1 .slide-track-2 {
+  animation: scroll-r 30s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+
+.slider-1 .slide {
+  height: 75pt;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+.slider-1 .slide img {
+  width: 180px;
+  padding: 1pc;
+  vertical-align: middle;
+  margin: 0 auto;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes scroll-l {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll-r {
+  100% {
+    transform: translateX(0);
+  }
+
+  0% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+
+
+
+
+
+
+.contenedor-fotografia {
+  height: 56vh;
+  overflow: clip;
+  width: 84vh;
+  margin-bottom: 25px;
+}
+
+
+.slider--compact>div {
+  flex: 0 0 auto;
+  position: relative;
+  width: 29vw;
+  align-items: center;
+}
+
+
+
+
+
+.panel-visual {
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Detalles del diseño del coche */
+.section:nth-child(13) {
+  display: flex;
+  flex-direction: row;
+  padding-top: 22vh;
+  color: #ffffff;
+  padding-bottom: 9vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.titulo-ingenieria {
+  font-family: "Michroma", sans-serif;
+  font-size: 2.2rem;
+}
+
+
+.descripcion-ingenieria {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.succsd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55vh;
+  width: 63vh;
+  overflow: hidden;
+}
+
+.contenedor-texto {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 76vh;
+  gap: 43px;
+}
+
+.sdrf {
+  height: 100%;
+}
+
+.bloque-presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.contenido-ingenieria {
+  justify-content: space-between;
+  height: 100%;
+  display: flex;
+  gap: 42px;
+}
+
+
+.succsd2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 104vh;
+  width: 76vh;
+  overflow: hidden;
+}
+
+.sdrf2 {
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tecnología del vehículo */
+
+.section:nth-child(14) {
+  display: flex;
+  align-items: start;
+  padding-top: 17vh;
+  padding-bottom: 13vh;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(0, 0, 0);
+  padding-right: 6vh;
+  padding-left: 6vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section:nth-child(15) {
+  display: flex;
+  padding-top: 6vh;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  color: #ffffff;
+  font-family: "Michroma", sans-serif;
+  padding-bottom: 16vh;
+}
+
+
+
+.envoltorio-imagen-166 {
+  height: 94vh;
+  width: 63vw;
+  overflow: clip;
+}
+
+
+
+
+
+
+
+
+
+/* Nuestros servicio */
+.section:nth-child(16) {
+  display: flex;
+  align-items: start;
+  padding-top: 17vh;
+  padding-bottom: 13vh;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(255, 255, 255);
+  padding-right: 6vh;
+  padding-left: 6vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section:nth-child(17) {
+  display: flex;
+  align-items: center;
+  padding-top: 0vh;
+  padding-bottom: 18vh;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  padding-right: 9vh;
+  padding-left: 9vh;
+}
+
+
+.contenedor-imagen {
+  width: 62vh;
+  height: 47vh;
+  overflow: clip;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+
+.titulo-servicio {
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-family: "Michroma", sans-serif;
+  font-size: 1.3rem;
+}
+
+.imagen-servicio {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+transition: 0.3s ease;
+}
+
+.tarjeta-servicio-1, .tarjeta-servicio-2, .tarjeta-servicio-3 {
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+  background: white;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  text-align: start;
+  width: 62vh;
+}
+
+
+.tarjeta-servicio-1:hover .imagen-servicio{
+scale: 1.1;
+}
+
+
+.tarjeta-servicio-3:hover .imagen-servicio{
+  scale: 1.1;
+  }
+  
+
+  .tarjeta-servicio-2:hover .imagen-servicio{
+    scale: 1.1;
+    }
+    
+
+
+
+.descripcion-servicio{
+  width: 70%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+
+.contenedor-servicios {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 22px;
+  justify-content: center;
+}
+
+.btn-descubre-coleccion-1 {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #000000;
+  gap: 9px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;}
+
+  .btn-descubre-coleccion-1:hover {
+   text-decoration: underline; 
+}
+
+
+
+.boton-descubre-1:hover {
+  border: 1px solid black;
+  background-color: #0000;
+  color: black;
+}
+.boton-descubre-1 {
+  padding: 12px 20px 12px 20px;
+  text-decoration: none;
+  width: fit-content;
+  border-radius: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  gap: 9px;
+  border: 1px solid black;
+}
+
+
+
+
+.flecha-diagonal-1 {
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+
+
+.boton-descubre-1:hover .flecha-diagonal-1 {
+  transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Esta es la sección del pie de página */
+.section:nth-child(18) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  background-color: #000000;
+  justify-content: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+
+.footer-acciones {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+
+}
+
+
+.footer-accion:hover{
+text-decoration: underline;
+}
+
+.pie{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+
+.footer-accion {
+  font-size: 0.7rem;
+  cursor: pointer;
+  font-family: "Michroma", sans-serif;
+}
+
+.logo-6 {
+  position: relative;
+  height: 66px;
+}
+
+
+
+.pie-separador-1, .pie-separador-2 {
+  height: 1px;
+  width: 100%;
+  background-color: #ffffff8a;
+  margin-bottom: 71px;
+  margin-top: 23px;
+}
+
+
+.pie-separador-2 {
+  margin-top: 73px;
+}
+
+
+
+.pie-enlaces {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+  font-size: 0.7rem;
+  font-family: "Michroma", sans-serif;
+}
+
+
+
+.pie-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 66px;
+}
+
+
+.pie-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.titulo-aviso {
+  text-decoration: underline;
+  font-size: 0.7rem;
+  font-family: "Michroma", sans-serif;
+}
+
+.aviso-texto {
+  font-size: 0.65rem;
+  width: 90%;
+  color: #ffffffa6;
+  font-family: "Michroma", sans-serif;
+}
+
+.pie-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  align-items: start;
+  justify-content: start;
+}
+
+
+.moduule {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+
+
+.titulo-pie {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 0.7rem;
+  font-family: "Michroma", sans-serif;
+}
+
+
+
+.titulo-enlace-1:hover{
+text-decoration: underline;
+}
+
+
+
+.titulo-enlace-2{
+  font-size: 0.8rem;
+  color: #ffffffd1;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+}
+
+.titulo-enlace-2:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+.enlaces-media {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.enlaces-media a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.enlaces-media i {
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.enlaces-media i:hover {
+  color: #3d3c3c;
+}

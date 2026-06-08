@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURELION</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/java.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.0.0/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="media/contacto/AURELION.png">
+
+</head>
+
+<body>
+
+    <!-- Esta es la sección de la barra de navegación -->
+    <header id="navbar" class="navbar">
+        <nav class="contenido-barra-navegacion">
+
+            <div class="logo">
+                <a class="seccion-logo" href="index.html">
+                    <img class="logo-1" id="logo-por-defecto" src="media/contacto/logo1.png" alt="Aurelion-Logo">
+                </a>
+            </div>
+
+            <ul class="Enlaces-1">
+                <li><a class="enlace-A" href="html/galeria.html">Productos</a></li>
+                <li><a class="enlace-B" href="html/presupuesto.html">Comprar</a></li>
+                <li><a class="enlace-C" href="html/contacto.html">Contacto</a></li>
+            </ul>
+
+
+            <ul class="Enlaces-2">
+                <li>
+                    <p class="enlace-A">Ponte en contacto</p>
+                </li>
+            
+                <li>
+                    <div class="botón-1">Nuestra planta</div>
+                </li>
+            
+                <li>
+                    <div class="idioma">
+                        ES
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <script>
+            const navbar = document.getElementById("navbar");
+            let lastScrollTop = 0;
+            const scrollThreshold = 50;
+
+            window.addEventListener("scroll", () => {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+
+                if (scrollTop > lastScrollTop) {
+
+                    navbar.style.top = "-100px";
+                } else {
+
+                    navbar.style.top = "0";
+                }
+
+
+                if (scrollTop > scrollThreshold) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            });
+        </script>
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Sección Hero - presentación del coche -->
+    <div class="container">
+
+        <div class="section section1" id="section1">
+
+            <div class="fondo"></div>
+            <div>
+                <div class="contenedor-introduccion">
+                    <h1 class="entrada-principal-titulo-1"><span class="titulo-seccion-1">Descubre el Futuro</span>
+                        <br>Aurelion Novaire
+                        Edición Europea
+                    </h1>
+                    <h1 class="entrada-principal-titulo">Diseño sofisticado y tecnología de vanguardia, desde 41.000 €.
+                    </h1>
+                    <a class="btn-1" href="html/galeria.html">Discover Model</a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Sección de nuestros modelos de coches -->
+        <div class="seccion seccion2" id="section2">
+            <div class="contenido-seccion2">
+                <p class="titulo-seccion2">EL MUNDO<br>DE AURELION</p>
+            </div>
+
+            <script>
+                const sections = document.querySelectorAll('.seccion');
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('show');
+                        }
+                    });
+                }, {
+                    threshold: 0.15
+                });
+
+                sections.forEach(section => {
+                    observer.observe(section);
+                });
+            </script>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="section section3" id="section3">
+            <div class="cajas">
+
+                <div class="caja-principal">
+                    <div class="overlay-wrapper">
+                        <div class="capa-overlay">
+                            <p class="titulo-caja">El nuevo AURELION Eclipse</p>
+                            <p class="descripcion-caja">Ingeniería de precisión para quienes buscan algo más <br> que
+                                rendimiento.</p>
+                        </div>
+                    </div>
+
+                    <img class="imagen-caja-principal" src="media/index/coche-1.jpg" alt="">
+                </div>
+
+                <div class="grupo-cajas">
+
+                    <div class="caja-secundaria">
+                        <div class="overlay-wrapper">
+                            <div class="capa-overlay">
+                                <p class="titulo-caja">AURELION × VALTIER</p>
+                                <p class="descripcion-caja">El nuevo SUV eléctrico que redefine <br> la conducción
+                                    moderna.</p>
+                            </div>
+                        </div>
+
+                        <img class="imagen-caja-secundaria" src="media/index/coche-2.jpg" alt="">
+                    </div>
+
+                    <div class="caja-secundaria">
+                        <div class="overlay-wrapper">
+                            <div class="capa-overlay">
+                                <p class="titulo-caja">Colección Terrane</p>
+                                <p class="descripcion-caja">Esenciales de lujo, inspirados <br>en el gran turismo.</p>
+                            </div>
+                        </div>
+
+                        <img class="imagen-caja-secundaria" src="media/index/coche-3.jpg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Sección de nuestros 3 modelos de coches -->
+        <div class="section section4" id="section4">
+            <div class="seccion-cuatro">
+
+
+                <div class="contenedor-estado">
+                    <div>
+                        <p class="texto-seccion-cuatro">
+                            LA GAMA <br> DE AURELION</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+
+                    const sections = document.querySelectorAll(".section");
+
+                    const observer = new IntersectionObserver((entries) => {
+
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add("show");
+                            }
+                        });
+
+                    }, {
+                        threshold: 0.15
+                    });
+
+                    sections.forEach(section => {
+                        observer.observe(section);
+                    });
+
+                });
+            </script>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="section section5" id="section5">
+            <div class="contenedor-galeria">
+
+                <div class="tarjeta-auto">
+                    <div class="overlay-auto">
+                        <div class="contenedor-logo">
+                            <div class="logo-auto">
+                                <img class="imagen-logo" src="media/index/AUREX.png" alt="">
+                            </div>
+                        </div>
+                        <div class="boton-plus">+</div>
+                    </div>
+                    <img class="imagen-galeria" src="media/index/coche-4.jpg" alt="">
+                </div>
+
+                <div class="tarjeta-auto">
+                    <div class="overlay-auto">
+                        <div class="contenedor-logo">
+                            <div class="logo-auto">
+                                <img class="imagen-logo" src="media/index/AXERON.png" alt="">
+                            </div>
+                        </div>
+                        <div class="boton-plus">+</div>
+                    </div>
+                    <img class="imagen-galeria" src="media/index/coche-5.jpg" alt="">
+                </div>
+
+                <div class="tarjeta-auto">
+                    <div class="overlay-auto">
+                        <div class="contenedor-logo">
+                            <div class="logo-auto">
+                                <img class="imagen-logo" src="media/index/TERRANE.png" alt="">
+                            </div>
+                        </div>
+                        <div class="boton-plus"><span>+</span></div>
+                    </div>
+                    <img class="imagen-galeria" src="media/index/coche-6-(2).jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Sección de todos los modelos de nuestra marca de coches -->
+        <div class="section section6" id="section6">
+            <div class="contenedor-motorsport">
+                <div class="motorsport-centro">
+                    <p class="subtitulo-motorsport">EXPLORA NUESTRA GAMA</p>
+                    <h2 class="titulo-motorsport">LA GAMA COMPLETA AURELION</h2>
+                    <p class="descripcion-motorsport">
+                        Descubre todos los modelos Aurelion y explora cómo cada vehículo combina innovación, diseño y
+                        rendimiento excepcionales.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Esta es la sección de explicación de nuestro legado -->
+        <div class="section section7" id="section7">
+            <div class="slider slider--compact">
+                <div>
+
+                    <div class="panel-visual">
+
+                        <div class="marco-imagen">
+                            <div class="contenedor-fotografia"><img class="fotografia-vehiculo"
+                                    src="media/index/coche-6-(2).jpg" alt=""></div>
+                        </div>
+
+
+                    </div>
+                    <div class="bloque-informativo">
+                        <h2 class="encabezado-caracteristica">ELYSIAN</h2>
+                        <p class="descripcion-caracteristica">Lujo, perfeccionado.</p>
+                        <a href="html/galeria.html" class="boton-descubre">
+                            Descubre
+                            <i class="fa-solid fa-arrow-right flecha-diagonal"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div>
+
+                    <div class="panel-visual">
+
+                        <div class="marco-imagen">
+                            <div class="contenedor-fotografia"><img class="fotografia-vehiculo"
+                                    src="media/index/coche-7.webp" alt=""></div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="bloque-informativo">
+                        <h2 class="encabezado-caracteristica">NOVAIRE</h2>
+                        <p class="descripcion-caracteristica">Más allá de cada horizonte.</p>
+                        <a href="html/galeria.html" class="boton-descubre">
+                            Descubre
+                            <i class="fa-solid fa-arrow-right flecha-diagonal"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div>
+
+                    <div class="panel-visual">
+
+                        <div class="marco-imagen">
+                            <div class="contenedor-fotografia"><img class="fotografia-vehiculo"
+                                    src="media/index/coche-8.webp" alt=""></div>
+                        </div>
+
+
+                    </div>
+                    <div class="bloque-informativo">
+                        <h2 class="encabezado-caracteristica">LUMERA</h2>
+                        <p class="descripcion-caracteristica">Gracia a toda velocidad.</p>
+                        <a href="html/galeria.html" class="boton-descubre">
+                            Descubre
+                            <i class="fa-solid fa-arrow-right flecha-diagonal"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+                <div>
+
+                    <div class="panel-visual">
+
+                        <div class="marco-imagen">
+                            <div class="contenedor-fotografia"><img class="fotografia-vehiculo"
+                                    src="media/index/coche-principal.webp" alt=""></div>
+                        </div>
+
+
+                    </div>
+                    <div class="bloque-informativo">
+                        <h2 class="encabezado-caracteristica">ORIALIS</h2>
+                        <p class="descripcion-caracteristica">Ilumina cada trayecto.</p>
+                        <a href="html/galeria.html" class="boton-descubre">
+                            Descubre
+                            <i class="fa-solid fa-arrow-right flecha-diagonal"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div>
+
+                    <div class="panel-visual">
+
+                        <div class="marco-imagen">
+                            <div class="contenedor-fotografia"><img class="fotografia-vehiculo"
+                                    src="media/index/coche-9.webp" alt=""></div>
+                        </div>
+
+
+                    </div>
+                    <div class="bloque-informativo">
+                        <h2 class="encabezado-caracteristica">VALTIER</h2>
+                        <p class="descripcion-caracteristica">Explora sin límites.</p>
+                        <a href="html/galeria.html" class="boton-descubre">
+                            Descubre
+                            <i class="fa-solid fa-arrow-right flecha-diagonal"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+                <div>
+
+                    <div class="panel-visual">
+
+                        <div class="marco-imagen">
+                            <div class="contenedor-fotografia"><img class="fotografia-vehiculo"
+                                    src="media/index/coche-10.webp" alt=""></div>
+                        </div>
+
+
+                    </div>
+                    <div class="bloque-informativo">
+                        <h2 class="encabezado-caracteristica">ASTRALIS</h2>
+                        <p class="descripcion-caracteristica">La distancia se encuentra con el deseo.</p>
+                        <a href="html/galeria.html" class="boton-descubre">
+                            Descubre
+                            <i class="fa-solid fa-arrow-right flecha-diagonal"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <script>
+                document.querySelectorAll('.slider').forEach((slider) => {
+                    let isDown = false;
+                    let startX;
+                    let scrollLeft;
+
+                    slider.addEventListener('mousedown', (e) => {
+                        isDown = true;
+                        slider.classList.add('active');
+                        startX = e.pageX - slider.offsetLeft;
+                        scrollLeft = slider.scrollLeft;
+                    });
+
+                    slider.addEventListener('mouseleave', () => {
+                        isDown = false;
+                    });
+
+                    slider.addEventListener('mouseup', () => {
+                        isDown = false;
+                    });
+
+                    slider.addEventListener('mousemove', (e) => {
+                        if (!isDown) return;
+                        e.preventDefault();
+                        const x = e.pageX - slider.offsetLeft;
+                        const walk = (x - startX) * 2;
+                        slider.scrollLeft = scrollLeft - walk;
+                    });
+                });
+            </script>
+        </div>
+
+
+
+
+
+
+
+        <!-- Sección de presentación del coche de carreras de este año -->
+        <div class="section section8" id="section8">
+            <div class="contenedor-motorsport">
+                <div class="motorsport-centro">
+                    <p class="subtitulo-motorsport">HERENCIA DEL MOTORSPORT</p>
+                    <h2 class="titulo-motorsport">AURELION MOTORSPORT</h2>
+                    <p class="descripcion-motorsport">
+                        Aurelion compite al más alto nivel del automovilismo mundial, llevando el rendimiento al límite
+                        junto a los fabricantes más icónicos del sector. Desde las carreras de resistencia hasta la
+                        innovación en monoplazas, cada vuelta da forma al futuro de nuestros vehículos de calle.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="section section9" id="section9">
+            <div class="contenedor-al26">
+
+                <div class="contenido-al26">
+                    <p class="titulo-al26">AL-26R</p>
+
+                    <p class="descripcion-al26">
+                        El AURELION Al-26R es nuestro monoplaza de competición para la temporada 2026, diseñado mediante
+                        aerodinámica avanzada, sistemas híbridos de alto rendimiento y desarrollo continuo en pista.
+                        Construido para competir al más alto nivel del automovilismo internacional, representa el
+                        siguiente paso en nuestra búsqueda de precisión, velocidad e innovación.
+                    </p>
+
+                    <a href="html/galeria.html" class="boton-al26">
+                        Descubre
+                        <i class="fa-solid fa-arrow-right flecha-diagonal"></i>
+                    </a>
+                </div>
+
+                <div class="contenedor-imagen-al26">
+                    <div class="imagen-al26-wrapper">
+                        <img class="imagen-al26" src="media/index/AL-26R.webp" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Nuestras últimas noticias -->
+        <div class="section section10" id="section10">
+            <div class="titulo-descubrir">
+                <p class="titulo-principal">DESCUBRE MÁS <br> SOBRE NOVA</p>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="section section11" id="section11">
+            <div id="rejilla-destacados" class="rejilla-destacados"></div>
+
+        </div>
+
+
+
+
+        <!-- Esta es la sección del pie de página -->
+        <div class="section section12" id="section12">
+
+            <div class="pie">
+                <div class="footer-acciones">
+                    <p class="footer-accion">NOVEDADES</p>
+                    <p class="footer-accion">CONFIGURADOR</p>
+                    <p class="footer-accion">RESERVAR </p>
+                    <img class="logo-6" src="media/contacto/logo1.png" alt="Aurelion-Logo">
+
+                    <p class="footer-accion">CONCESIONARIOS</p>
+                    <p class="footer-accion">CATÁLOGO</p>
+                    <p class="footer-accion">PRUEBAS</p>
+                </div>
+
+                <div class="pie-separador-1"></div>
+
+                <div class="pie-1">
+                    <div class="pie-enlaces">
+                        <p class="titulo-enlace-1">QUIÉNES SOMOS</p>
+                        <p class="titulo-enlace-1">CONTACTO</p>
+                        <p class="titulo-enlace-1">ACCESIBILIDAD</p>
+                        <p class="titulo-enlace-1">TRABAJA CON NOSOTROS</p>
+                        <p class="titulo-enlace-1">AURELION MOTORSPORTS</p>
+                        <p class="titulo-enlace-1">SUSCRÍBETE AL BOLETÍN</p>
+                        <p class="titulo-enlace-1">NOTAS DE PRENSA</p>
+                        <p class="titulo-enlace-1">POLÍTICA DE PRIVACIDAD</p>
+                        <p class="titulo-enlace-1">GESTIONAR PREFERENCIAS</p>
+                        <p class="titulo-enlace-1">CONFIGURACIÓN DE COOKIES</p>
+
+                        <div class="enlaces-media">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="moduule">
+
+
+
+                        <div class="pie-menu">
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">SERVICIO Y MANTENIMIENTO</p>
+                                <p class="titulo-enlace-2">PROGRAMAR UNA CITA</p>
+                                <p class="titulo-enlace-2">PLAN DE MANTENIMIENTO</p>
+                                <p class="titulo-enlace-2">REVISIÓN DEL VEHÍCULO</p>
+                                <p class="titulo-enlace-2">SERVICIO TÉCNICO</p>
+                            </div>
+
+
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">CONCESIONARIOS</p>
+                                <p class="titulo-enlace-2">BUSCAR CONCESIONARIO</p>
+                                <p class="titulo-enlace-2">SOLICITAR UNA PRUEBA DE CONDUCCIÓN</p>
+                                <p class="titulo-enlace-2">HORARIOS Y UBICACIONES</p>
+                                <p class="titulo-enlace-2">SERVICIOS DEL CONCESIONARIO</p>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="pie-menu">
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">GARANTÍA</p>
+                                <p class="titulo-enlace-2">COBERTURA DE GARANTÍA</p>
+                                <p class="titulo-enlace-2">CONDICIONES DE GARANTÍA</p>
+                                <p class="titulo-enlace-2">AMPLIACIÓN DE GARANTÍA</p>
+                                <p class="titulo-enlace-2">RECLAMACIONES DE GARANTÍA</p>
+
+                            </div>
+
+
+
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">RECAMBIOS Y ACCESORIOS</p>
+                                <p class="titulo-enlace-2">ACCESORIOS ORIGINALES</p>
+                                <p class="titulo-enlace-2">PIEZAS DE RECAMBIO</p>
+                                <p class="titulo-enlace-2">PERSONALIZACIÓN</p>
+                                <p class="titulo-enlace-2">CATÁLOGO DE PRODUCTOS</p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="pie-menu">
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">PROPIETARIOS</p>
+                                <p class="titulo-enlace-2">MI CUENTA</p>
+                                <p class="titulo-enlace-2">MANUALES DEL VEHÍCULO</p>
+                                <p class="titulo-enlace-2">HISTORIAL DE MANTENIMIENTO</p>
+                                <p class="titulo-enlace-2">REGISTRAR MI VEHÍCULO</p>
+                            </div>
+
+
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">ASISTENCIA EN CARRETERA</p>
+                                <p class="titulo-enlace-2">SOLICITAR ASISTENCIA</p>
+                                <p class="titulo-enlace-2">SERVICIO 24/7</p>
+                                <p class="titulo-enlace-2">COBERTURA DE EMERGENCIA</p>
+                                <p class="titulo-enlace-2">CONTACTOS DE URGENCIA</p>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="pie-menu">
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">AYUDA Y SOPORTE</p>
+                                <p class="titulo-enlace-2">CENTRO DE AYUDA</p>
+                                <p class="titulo-enlace-2">PREGUNTAS FRECUENTES</p>
+                                <p class="titulo-enlace-2">CONTACTAR CON SOPORTE</p>
+                                <p class="titulo-enlace-2">ASISTENCIA TÉCNICA</p>
+                            </div>
+
+
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">DESCARGAS</p>
+                                <p class="titulo-enlace-2">MANUALES</p>
+                                <p class="titulo-enlace-2">FOLLETOS</p>
+                                <p class="titulo-enlace-2">ACTUALIZACIONES DE SOFTWARE</p>
+                                <p class="titulo-enlace-2">DOCUMENTACIÓN TÉCNICA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pie-separador-2"></div>
+
+                <div class="pie-legal">
+                    <p class="titulo-aviso">AVISO LEGAL Y SIMULACIÓN</p>
+
+                    <p class="aviso-texto">
+                        ©2008–2026 Aurelion. Este sitio web es un proyecto académico creado únicamente con fines
+                        educativos y de demostración.
+                        No representa una empresa real ni un servicio comercial activo. Toda la información presentada
+                        es ficticia y utilizada exclusivamente
+                        como parte de un ejercicio universitario.
+                    </p>
+
+                    <p class="aviso-texto">
+                        Cualquier similitud con marcas, empresas o servicios existentes es puramente coincidente. Este
+                        proyecto no está afiliado,
+                        asociado ni respaldado por ninguna organización real.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

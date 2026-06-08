@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURELION</title>
+  <script src="../js/prespuesto.js" defer></script>
+  <link rel="stylesheet" href="../css/presupuesto.css">
+  <link rel="icon" type="image/png" href="../media/contacto/AURELION.png">
+</head>
+
+<body>
+
+
+
+  <!-- Animación de carga de la página -->
+  <div id="animacion-pantalla-carga">
+    <img src="../media/contacto/logo1.png" alt="Logo" class="logo-carga">
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Esta es la sección de la barra de navegación -->
+  <header id="navbar" class="navbar">
+    <nav class="contenido-barra-navegacion">
+
+      <div class="logo">
+        <a class="seccion-logo" href="../index.html">
+          <img class="logo-1" id="logo-por-defecto" src="../media/contacto/logo1.png" alt="Aurelion-Logo">
+        </a>
+      </div>
+
+      <ul class="Enlaces-1">
+        <li><a class="enlace-1" href="../html/galeria.html">Productos</a></li>
+        <li><a class="enlace-B" href="../html/presupuesto.html">Comprar</a></li>
+        <li><a class="enlace-1" href="../html/contacto.html">Contacto</a></li>
+      </ul>
+
+
+
+      <ul class="Enlaces-2">
+        <li>
+          <p class="enlace-A">Ponte en contacto</p>
+        </li>
+
+        <li>
+          <div class="botón-1">Nuestra planta</div>
+        </li>
+
+        <li>
+          <div class="idioma">
+            ES
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let lastScrollTop = 0;
+      const scrollThreshold = 50;
+
+      window.addEventListener("scroll", () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+
+        if (scrollTop > lastScrollTop) {
+
+          navbar.style.top = "-100px";
+        } else {
+
+          navbar.style.top = "0";
+        }
+
+
+        if (scrollTop > scrollThreshold) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      });
+    </script>
+
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+
+
+
+    <!-- Opciones de color y Opciones de extrior -->
+    <div class="section2">
+
+
+      <div class="carrusel-izquierdo">
+
+        <div class="galeria-producto">
+          <div class="imagen-principal">
+
+            <button class="carousel-btn prev" onclick="changeImage(-1)">❮</button>
+
+            <img id="carouselImage" src="../media/presupuesto/coche-1.webp" alt="coche-1">
+
+            <button class="carousel-btn next" onclick="changeImage(1)">❯</button>
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="contenido-derecho">
+
+        <div class="block">
+          <div class="contenido">
+            <div class="Opciones-color" id="part1">
+              <div class="info-color">
+                <div class="nombre-modelo">
+                  <p class="nombre-modelo-1">NOVAIRE</p>
+                  <div class="año">2026</div>
+                </div>
+                <p class="descripcion-bloque">PRECIO TOTAL 41.000 $</p>
+                <p class="descripcion-bloque-01">El SUV mediano premium de Aurelion"</p>
+                <div class="detalle-bloque-7">Visite nuestro concesionario para ver y comprar el suyo.</div>
+
+              </div>
+
+              <div class="línea-separada"></div>
+
+
+              <div class="contenido-2">
+                <p class="descripcion-bloque-1">COLORES EXTERIOR</p>
+
+                <div class="opciones-tamaño">
+                  <div class="opcion-tamaño" data-price="3500" onclick="applyOption(this)">
+                    <div class="colordot-1">
+                      <img class="swer" src="../media/presupuesto/color-1.png" alt="color-1">
+                    </div>
+
+                    <p class="color">
+                      Blanco Cristal<br>3500$
+                    </p>
+
+                    <button class="Ampliar-boton">Ampliar</button>
+                  </div>
+                  <div class="opcion-tamaño" data-price="4200" onclick="applyOption(this)">
+                    <div class="colordot-1">
+                      <img class="swer" src="../media/presupuesto/color-2.png" alt="color-2">
+                    </div>
+
+                    <p class="color">
+                      Negro Diamante<br>4200$
+                    </p>
+
+                    <button class="Ampliar-boton">Ampliar</button>
+                  </div>
+                  <div class="opcion-tamaño" data-price="2200" onclick="applyOption(this)">
+                    <div class="colordot-1">
+                      <img class="swer" src="../media/presupuesto/color-3.png" alt="color-3">
+                    </div>
+
+                    <p class="color">
+                      Plata Platino <br>2200$
+                    </p>
+
+                    <button class="Ampliar-boton">Ampliar</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <span id="ticketError" class="error-opcion">Por favor, selecciona una opción de color</span>
+              <div class="línea-separada"></div>
+
+
+
+
+
+              <div class="sección-casillas">
+                <p class="Selecciona">Selecciona las opciones</p>
+              </div>
+
+
+              <div class="casillas">
+                <div class="casilla-1">
+
+                  <p>Acepto la política de privacidad</p>
+                  <label><input type="checkbox" id="privacyPolicy"></label>
+                </div>
+                <div class="casilla-2">
+
+                  <p>Confirmo esta opciónes</p>
+                  <label class="extrem"><input type="checkbox" id="checkbox-1"></label>
+                </div>
+              </div>
+
+              <span id="checkboxError" class="error-checkbox">Ambas casillas deben estar marcadas</span>
+
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="block">
+          <div class="apess">
+            <p class="prisse">Opciones de exterior</p>
+
+            <div class="piast">
+              <div class="cola">
+                <img class="posit" src="../media/presupuesto/Techo.jpg" alt="Techo">
+              </div>
+
+              <div class="esque">
+                <p class="pors">Techo panorámico</p>
+                <input class="hty" type="checkbox" id="checkbox-2">
+              </div>
+            </div>
+
+            <div class="piast">
+              <div class="cola">
+                <img class="posit" src="../media/presupuesto/Rieles.jpg" alt="Rieles">
+              </div>
+
+              <div class="esque">
+                <p class="pors">Rieles de techo</p>
+                <input class="hty" type="checkbox" id="checkbox-3">
+              </div>
+            </div>
+
+            <div class="piast">
+              <div class="cola">
+                <img class="posit" src="../media/presupuesto/Faros.jpg" alt="Faros">
+              </div>
+
+              <div class="esque">
+                <p class="pors">Faros LED</p>
+                <input class="hty" type="checkbox" id="checkbox-4">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+
+        const images = [
+          "../media/presupuesto/coche-1.webp",
+          "../media/presupuesto/coche-2.webp",
+          "../media/presupuesto/coche-3.webp"
+        ];
+
+        let currentIndex = 0;
+        const img = document.getElementById("carouselImage");
+
+        window.changeImage = function (dir) {
+          currentIndex += dir;
+
+          if (currentIndex < 0) currentIndex = images.length - 1;
+          if (currentIndex >= images.length) currentIndex = 0;
+
+          img.src = images[currentIndex];
+        };
+
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="section2">
+      <!-- Información del interior y Información-->
+      <div class="carrusel-izquierdo">
+
+        <div class="galeria-producto-1">
+          <div class="imagen-principal-01">
+
+
+
+            <img class="carouselImage-01" src="../media/presupuesto/silla.jpg" alt="silla">
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="contenido-derecho">
+
+        <div class="block">
+          <div class="motor-card">
+            <h1 class="holie">Paquetes interiores</h1>
+
+            <div class="detalle-bloque-7">Algunas de estas opciones vienen de serie</div>
+
+            <div class="header-row">
+              <div class="motor-section">
+                <h2>Opciones de interior</h2>
+
+                <div class="tabs">
+                  <button class="tab active">Asientos</button>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="spec-table">
+              <div class="spec-row">
+                <span>Material de asientos</span>
+                <span class="value">4</span>
+              </div>
+
+              <div class="spec-row">
+                <span>Asientos calefactables</span>
+                <span class="value">1</span>
+              </div>
+
+              <div class="spec-row">
+                <span>Asientos ventilados</span>
+                <span class="value">3</span>
+              </div>
+
+              <div class="spec-row">
+                <span>Memoria de asientos</span>
+                <span class="value">2</span>
+              </div>
+
+              <div class="spec-row">
+                <span>Techo interior</span>
+                <span class="value">2</span>
+              </div>
+            </div>
+
+          </div>
+          <button class="button1-1" onclick="goToPart5()">Descarga nuestro catálogo para ver las opciones</button>
+        </div>
+
+        <div class="block">
+          <div>
+
+
+            <div>
+
+              <div class="datos" id="part2">
+
+
+                <div class="info-obra-1">
+                  <p class="prisse12">Información</p>
+                  <p class="descripcion-bloque-9">Por favor, deje sus datos de contacto para que podamos contactarle
+                    sobre su compra.</p>
+                  <div class="detalle-bloque-7">Primero recibirá un correo electrónico para confirmar.</div>
+                </div>
+
+
+
+
+
+                <div class="formulario-datos">
+                  <div class="campo-nombre">
+                    <input class="entrada-texto" type="text" id="name" placeholder="Nombre">
+                    <span id="nameError" class="mensaje-error-1"></span>
+                  </div>
+                  <div class="campo-nombre">
+                    <input class="entrada-texto" type="text" id="surname" placeholder="Apellido">
+                    <span id="surnameError" class="mensaje-error-2"></span>
+                  </div>
+                  <div class="campo-nombre">
+                    <input class="entrada-texto" type="text" id="phone" placeholder="Teléfono">
+                    <span id="phoneError" class="mensaje-error-3"></span>
+                  </div>
+                  <div class="campo-nombre">
+                    <input class="entrada-texto" type="text" id="email" placeholder="Correo electrónico">
+                    <span id="emailError" class="mensaje-error-4"></span>
+                  </div>
+
+
+                </div>
+
+                <div class="botones">
+                  <p class="descripciAon-bloque-453">Al enviar esta solicitud, usted acepta ser contactado por Aurelion
+                    Automotive en relación con su consulta y acepta nuestros Términos de Servicio y Política de
+                    Privacidad.</p>
+                  <button class="button1" onclick="submitForm(this)">Enviar</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Proceso de compra -->
+    <div class="section section3" id="section3">
+      <div class="envoltorio-contenido-1">
+        <div class="envoltorio-imagen-1">
+          <img class="imagen-1" src="../media/presupuesto/coche-4.avif" alt="pintura-del-sala-de-estar">
+        </div>
+
+        <div class="envoltorio-texto">
+          <div class="envio" id="part5">
+            <div class="info-obra">
+              <p class="prisse12">Elige la Entrega</p>
+              <p class="descripcion-bloque-90">Selecciona cómo y cuándo quieres recibir tu vehículo</p>
+            </div>
+
+            <div class="campo-formulario">
+              <label class="aui"> Duración (días):</label>
+              <input class="inpt" type="number" id="duration" value="1">
+            </div>
+
+            <div class="opciones-adicionales-1">
+              <h3 class="comm">Confirma tu dirección y selecciona la fecha de entrega</h3>
+
+              <div class="opciones-tamaño-0">
+                <div class="opcion-tamaño-0" data-price="3200" onclick="selectTicket(this)">
+
+                  <p>A domicilio</p>
+                </div>
+                <div class="opcion-tamaño-0" data-price="2100" onclick="selectTicket(this)">
+
+                  <p>Concesionario</p>
+                </div>
+                <div class="opcion-tamaño-0" data-price="1000" onclick="selectTicket(this)">
+
+                  <p>Punto de recogida</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="selector-cantidad">
+              <span id="ticketCount">1</span> Protección del vehículo (básica ↔ completa)
+              <input type="range" id="ticketSlider" min="1" max="3" value="1">
+
+
+              <h3 class="megga">Precio total: €<span id="totalPrice">0</span></h3>
+            </div>
+
+            <div class="botones">
+              <button class="button1" onclick="submitPart5(this)">Enviar</button>
+              
+              <div class="error-1">
+                <span id="colorError" class="error-opcion">
+                  Debes seleccionar un color exterior.
+                </span>
+
+                <span id="checkboxPart1Error" class="error-opcion">
+                  Debes aceptar y confirmar las opciones.
+                </span>
+
+                <span id="formError" class="error-opcion">
+                  Debes completar y enviar tus datos de contacto.
+                </span>
+                <span id="deliveryError" class="error-opcion">
+                  Debes seleccionar un método de entrega.
+                </span>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Esta es la sección del pie de página -->
+    <div class="section section4" id="section4">
+      <div class="contenido-pie">
+
+        <p class="pie-copyright">© 2026 Aurelion España.</p>
+
+        <p class="footer-aviso-1">
+          Este sitio web es una creación ficticia desarrollada exclusivamente con fines académicos y educativos.
+          No está afiliado, respaldado ni representa a ninguna empresa, organización o producto real.
+          Todo el contenido es simulado y está destinado únicamente al aprendizaje y la demostración.
+        </p>
+
+        <p class="footer-aviso-2">
+          La información presentada en esta sección forma parte de una simulación académica ficticia.
+          No se proporcionan ni se implican precios reales, datos financieros ni condiciones comerciales.
+          Todas las cifras y descripciones son ilustrativas y no se basan en transacciones reales.
+        </p>
+
+        <p class="footer-aviso-3">
+          El contenido mostrado en este sitio tiene fines exclusivamente de demostración, aprendizaje e investigación.
+          Cualquier similitud con organizaciones, personas o entidades comerciales reales es puramente coincidente.
+          No se puede derivar ninguna información legal, financiera o factual del contenido presentado.
+        </p>
+
+        <p class="footer-aviso-4">
+          La información de este sitio no se actualiza en tiempo real y no refleja operaciones o eventos reales.
+          Los usuarios no deben basarse en este contenido para la toma de decisiones fuera del ámbito académico o
+          educativo.
+        </p>
+
+        <p class="footer-aviso-5">
+          Este proyecto forma parte de un ejercicio educativo. Todos los datos, elementos visuales y referencias son
+          ficticios
+          y están destinados únicamente a demostrar conceptos de desarrollo web y diseño.
+        </p>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="section section5" id="section5">
+      <p class="Logo-pie">AURELION</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+
+</html>

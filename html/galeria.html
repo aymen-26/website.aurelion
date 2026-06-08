@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURELION</title>
+    <link rel="stylesheet" href="../css/galeria.css">
+    <script src="../js/java.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.0.0/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../media/contacto/AURELION.png">
+
+</head>
+
+<body>
+
+
+    <!-- Esta es la sección de la barra de navegación -->
+
+    <header id="navbar" class="navbar">
+        <nav class="contenido-barra-navegacion">
+
+            <div class="logo">
+                <a class="seccion-logo" href="../index.html">
+                    <img class="logo-1" id="logo-por-defecto" src="../media/contacto/logo1.png" alt="Aurelion-Logo">
+                </a>
+            </div>
+
+            <ul class="Enlaces-1">
+                <li><a class="enlace-A" href="../html/galeria.html">Productos</a></li>
+                <li><a class="enlace-1" href="../html/presupuesto.html">Comprar</a></li>
+                <li><a class="enlace-1" href="../html/contacto.html">Contacto</a></li>
+            </ul>
+
+
+
+            <ul class="Enlaces-2">
+                <li>
+                    <p class="enlace-A">Ponte en contacto</p>
+                </li>
+
+                <li>
+                    <div class="botón-1">Nuestra planta</div>
+                </li>
+
+                <li>
+                    <div class="idioma">
+                        ES
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+
+        
+        <script>
+            const navbar = document.getElementById("navbar");
+            let lastScrollTop = 0;
+            const scrollThreshold = 50;
+
+            window.addEventListener("scroll", () => {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+
+                if (scrollTop > lastScrollTop) {
+
+                    navbar.style.top = "-100px";
+                } else {
+
+                    navbar.style.top = "0";
+                }
+
+
+                if (scrollTop > scrollThreshold) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            });
+        </script>
+    </header>
+
+
+
+
+    <!-- Introducción del modelo Novaire -->
+    <div class="container">
+        <div class="section section1" id="section1">
+            <div class="titulo-seccion">
+                <h1 class="entrada-principal__titulo-1">INNOVATION IN EVERY MILE</h1>
+            </div>
+            <div class="contenidor-1">
+                <video class="fondo-video" loop autoplay muted src="../media/galería/video-principal.mp4"></video>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <!-- Introducción de la página -->
+        <div class="section section2" id="section2">
+            <div class="Colección-De-Descripción fade-section">
+                <p class="Descripción-de-la-identidade">
+                    EL SUV ELÉCTRICO DE ALTO RENDIMIENTO
+                </p>
+
+                <h2 class="La-identidad-de-la-marca">NOVAIRE</h2>
+
+                <p class="explicación">
+                    Desde las mentes que están dando forma al futuro de la movilidad eléctrica, hasta los diseñadores e
+                    ingenieros que dan vida a cada detalle, este SUV ha sido creado con precisión e innovación.
+                    Cada componente está diseñado para ofrecer rendimiento y eficiencia.
+
+                </p>
+            </div>
+
+            <script>
+
+
+                const fadeSection = document.querySelector('.fade-section');
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            fadeSection.classList.add('show');
+                        }
+                    });
+                }, {
+                    threshold: 0.3
+                });
+
+                observer.observe(fadeSection);
+            </script>
+        </div>
+
+
+
+
+
+
+
+        <!-- Información sobre el modelo -->
+
+        <section data-scroll-section class="section3" id="section3">
+            <div class="seccion-introduccion">
+        
+                <h2 class="titulo-coche">NOVAIRE</h2>
+        
+                <div class="descripcion-introduccion">
+                    <div class="descripcion-introduccion-1">
+                        <p class="titulo-introduccion">Presentamos
+                            <br> el AURELION NOVAIRE
+                        </p>
+                        <div class="texto-introduccion">
+                            <p class="texto-introduccion-1">
+                                El nuevo NOVAIRE refleja nuestra visión de una movilidad
+                                eléctrica accesible, moldeada por la necesidad de eficiencia, comodidad y uso diario.
+                                Guiado por nuestro enfoque de Diseño Inteligente, Ingeniería Sostenible y Tecnología
+                                Integrada, marca una nueva dirección en nuestra gama eléctrica, ofreciendo una
+                                experiencia de conducción equilibrada pensada para la vida moderna.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="aston">
+                    <img class="mel" src="../media/galería/coche-1.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Información sobre el vehículo -->
+        <div class="section section4" id="section4">
+            <div class="Colección-De-Descripción-1">
+                <h2 class="La-identidad-de-la-marca-01">EL FUTURO EN MOVIMIENTO</h2>
+
+                <p class="explicación-02">Estamos redefiniendo la conducción eléctrica a través de tecnología avanzada,
+                    un diseño cuidadosamente concebido y un firme compromiso con la sostenibilidad, creando vehículos
+                    que se sienten tan naturales de conducir como innovadores en su visión del futuro.</p>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="section section5" id="section5">
+            <div class="envoltorio-contenido-1">
+                <div class="envoltorio-video-1">
+                    <video class="video-1" autoplay loop muted playsinline>
+                        <source src="../media/galería/video-coche-2.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="envoltorio-texto">
+                    <p class="Encabezado">AUTONOMÍA ELÉCTRICA AMPLIADA</p>
+                    <p class="Contenido-1">Diseñado tanto para los desplazamientos diarios como para los viajes de larga
+                        distancia, el vehículo ofrece hasta 520 km de autonomía con una sola carga. Su capacidad de
+                        carga rápida permite recargar la batería del 10 % al 80 % en aproximadamente 28 minutos,
+                        reduciendo los tiempos de espera y manteniéndote siempre en movimiento.</p>
+                    <p class="Contenido">Da un paso más allá con una amplia gama de prestaciones mejoradas en
+                        comparación con la serie 600. Esta gama está diseñada para quienes disfrutan liderando el
+                        camino.</p>
+
+                    <a href="html/galeria.html" class="contenedor-boton">
+                        Descubre
+                        <i class="fa-solid fa-arrow-right flecha-diagonal"></i>
+                    </a>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="section section6" id="section6">
+            <div class="envoltorio-contenido">
+                <div class="envoltorio-texto">
+                    <p class="Encabezado">RENDIMIENTO ELÉCTRICO INSTANTÁNEO</p>
+                    <p class="Contenido">Impulsado por un sistema de tracción total con doble motor que desarrolla 420
+                        caballos de potencia, el vehículo acelera de 0 a 100 km/h en tan solo 4,8 segundos. La entrega
+                        instantánea de par motor proporciona una respuesta suave y precisa, manteniendo al mismo tiempo
+                        la eficiencia que se espera de un vehículo eléctrico moderno.
+                    </p>
+
+                    <a href="html/galeria.html" class="contenedor-boton">
+                        Descubre
+                        <i class="fa-solid fa-arrow-right flecha-diagonal"></i>
+                    </a>
+
+                </div>
+
+                <div class="envoltorio-imagen-1">
+                    <img class="imagen-1" src="../media/galería/coche-2.jpg" alt="pintura-del-sala-de-estar">
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Imágenes del modelo -->
+
+
+        <div class="section section7" id="section7">
+            <div class="contenedor-imagenes-1">
+                <p class="titulo-imagenes">DESCUBRE EL NOVAIRE <br> EN MOVIMIENTO</p>
+
+                <p class="detalle-imagen">Descubre cada ángulo, detalle y elemento de diseño del NOVAIRE. Desliza para
+                    explorar sus líneas elegantes, sus innovadoras características y su avanzada ingeniería eléctrica,
+                    cuidadosamente diseñada para ofrecer estilo y rendimiento
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="section section8" id="section8">
+            <div class="carrusel-imagenes">
+
+
+                <div class="contenedor-imagenes">
+                    <img class="imagen-1" src="../media/galería/coche-3.jpg" alt="pintura-del-sala-de-estar">
+                    <img class="imagen-1" src="../media/galería/coche-4.jpg" alt="pintura-del-sala-de-estar">
+                    <img class="imagen-1" src="../media/galería/coche-5.jpg" alt="pintura-del-sala-de-estar">
+                    <img class="imagen-1" src="../media/galería/coche-6.jpg" alt="pintura-del-sala-de-estar">
+                </div>
+
+
+            </div>
+
+            <script>
+                (function () {
+                    const carousel = document.querySelector(".carrusel-imagenes");
+                    const track = document.querySelector(".contenedor-imagenes");
+                    const originalImages = Array.from(track.children);
+
+
+                    for (let i = 0; i < 2; i++) {
+                        originalImages.forEach(img => {
+                            track.appendChild(img.cloneNode(true));
+                        });
+                    }
+
+                    const images = Array.from(track.children);
+                    const originalCount = originalImages.length;
+
+                    let isDragging = false;
+                    let startX = 0;
+                    let currentTranslate = 0;
+                    let shift = 0;
+                    let activeIndex = originalCount;
+
+
+                    function updateActiveImage() {
+                        images.forEach((img, i) => {
+                            img.classList.toggle("active", i === activeIndex);
+                        });
+                    }
+
+                    function getShift() {
+                        const gap = parseInt(getComputedStyle(track).gap) || 0;
+                        return images[0].offsetWidth + gap;
+                    }
+
+                    function startDrag(e) {
+                        isDragging = true;
+                        startX = e.touches ? e.touches[0].clientX : e.clientX;
+                        track.style.transition = "none";
+                    }
+
+                    function moveDrag(e) {
+                        if (!isDragging) return;
+                        const x = e.touches ? e.touches[0].clientX : e.clientX;
+                        const diff = x - startX;
+
+
+                        track.style.transform = `translateX(${currentTranslate + diff * 0.2}px)`;
+                    }
+
+                    function endDrag(e) {
+                        if (!isDragging) return;
+                        isDragging = false;
+
+                        const x = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
+                        const diff = x - startX;
+
+
+                        if (diff < -10) {
+                            activeIndex++;
+                        } else if (diff > 10) {
+                            activeIndex--;
+                        }
+
+                        shift = getShift();
+                        currentTranslate = -activeIndex * shift;
+
+                        track.style.transition = "transform 0.4s ease";
+                        track.style.transform = `translateX(${currentTranslate}px)`;
+
+
+                        track.addEventListener("transitionend", () => {
+                            const totalWidth = shift * originalCount;
+
+                            if (activeIndex >= originalCount * 2) {
+                                activeIndex -= originalCount;
+                                currentTranslate += totalWidth;
+                                track.style.transition = "none";
+                                track.style.transform = `translateX(${currentTranslate}px)`;
+                            } else if (activeIndex < originalCount) {
+                                activeIndex += originalCount;
+                                currentTranslate -= totalWidth;
+                                track.style.transition = "none";
+                                track.style.transform = `translateX(${currentTranslate}px)`;
+                            }
+
+                            updateActiveImage();
+                        }, { once: true });
+
+                        updateActiveImage();
+                    }
+
+
+                    carousel.addEventListener("mousedown", startDrag);
+                    carousel.addEventListener("mousemove", moveDrag);
+                    carousel.addEventListener("mouseup", endDrag);
+                    carousel.addEventListener("mouseleave", endDrag);
+
+                    carousel.addEventListener("touchstart", startDrag);
+                    carousel.addEventListener("touchmove", moveDrag);
+                    carousel.addEventListener("touchend", endDrag);
+
+
+                    shift = getShift();
+                    activeIndex = originalCount;
+                    currentTranslate = -activeIndex * shift;
+                    track.style.transform = `translateX(${currentTranslate}px)`;
+                    updateActiveImage();
+                })();
+            </script>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Vídeo promocional del vehículo -->
+
+        <div class="section section9" id="section9">
+            <div class="Colección-De-Descripción-1">
+                <h2 class="La-identidad-de-la-marca-02">HORIZONTES MAJESTUOSOS</h2>
+
+                <p class="explicación-01">Experimenta la perfecta armonía entre diseño, tecnología y rendimiento
+                    eléctrico. Cada detalle está diseñado para elevar tu viaje, combinando un estilo elegante con
+                    características innovadoras que hacen que cada conducción sea extraordinaria. Adéntrate en un mundo
+                    donde el futuro de la movilidad se encuentra con una elegancia inigualable.</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="section section10" id="section10">
+            <div class="seccion-introduccion">
+
+                <div class="seccion-video">
+
+
+                    <div class="apartado-video">
+                        <div class="circulo" id="playBtn">
+                            <svg width="40" height="40" viewBox="0 0 100 100">
+                                <polygon points="20,10 20,90 90,50" fill="none" stroke="white" stroke-width="8"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+
+
+                    <video id="video10" loop muted class="mel-0" src="../media/galería/video-coche-3.mp4"></video>
+                </div>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                    const video = document.getElementById("video10");
+                    const button = document.getElementById("playBtn");
+
+                    button.addEventListener("click", (e) => {
+                        e.stopPropagation();
+                        video.play();
+                        button.classList.add("hidden");
+                    });
+
+                    video.addEventListener("click", () => {
+                        video.pause();
+                        button.classList.remove("hidden");
+                    });
+                });
+            </script>
+        </div>
+
+
+
+
+
+        <!-- Detalles del coche -->
+
+        <div class="section section11" id="section11">
+            <div class="titulo-descubrir">
+                <p class="titulo-principal">DESCUBRE MÁS <br> SOBRE NOVA</p>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="section section12" id="section12">
+            <div class="slider slider--compact">
+                <div>
+
+                    <div class="panel-visual">
+
+                        <div class="marco-imagen">
+                            <div class="contenedor-fotografia"><img class="fotografia-vehiculo"
+                                    src="../media/galería/coche-4.jpg" alt=""></div>
+                        </div>
+
+
+                    </div>
+                    <div class="bloque-informativo">
+                        <h2 class="encabezado-caracteristica">Firma Lumínica</h2>
+                        <p class="descripcion-caracteristica">Las luces traseras del NOVAIRE combinan precisión e
+                            innovación. Sus elegantes LEDs mejoran la visibilidad y destacan su elegancia futurista.</p>
+                    </div>
+
+
+                </div>
+
+                <div>
+
+                    <div class="panel-visual">
+
+                        <div class="marco-imagen">
+                            <div class="contenedor-fotografia"><img class="fotografia-vehiculo"
+                                    src="../media/galería/coche-3.jpg" alt=""></div>
+                        </div>
+
+
+                    </div>
+                    <div class="bloque-informativo">
+                        <h2 class="encabezado-caracteristica">Aerodinámica</h2>
+                        <p class="descripcion-caracteristica">Sus líneas elegantes fluyen de manera continua de adelante
+                            hacia atrás, optimizando estilo y eficiencia. Cada ángulo está diseñado para minimizar la
+                            resistencia y maximizar el impacto.</p>
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div>
+
+                    <div class="panel-visual">
+
+                        <div class="marco-imagen">
+                            <div class="contenedor-fotografia"><img class="fotografia-vehiculo"
+                                    src="../media/galería/interior.png" alt=""></div>
+                        </div>
+
+
+                    </div>
+                    <div class="bloque-informativo">
+                        <h2 class="encabezado-caracteristica">INTERIOR</h2>
+                        <p class="descripcion-caracteristica">Entra en un habitáculo diseñado para el máximo enfoque y
+                            confort. Materiales premium se combinan con controles intuitivos para una experiencia de
+                            conducción moderna. Cada elemento está creado para ponerte en armonía con el vehículo.</p>
+                    </div>
+
+
+                </div>
+
+
+                <div>
+
+                    <div class="panel-visual">
+
+                        <div class="marco-imagen">
+                            <div class="contenedor-fotografia"><img class="fotografia-vehiculo"
+                                    src="../media/galería/sistema-control.webp" alt=""></div>
+                        </div>
+
+
+                    </div>
+                    <div class="bloque-informativo">
+                        <h2 class="encabezado-caracteristica">SISTEMA DE CONTROL</h2>
+                        <p class="descripcion-caracteristica">Las pantallas digitales avanzadas mantienen toda la
+                            información esencial al alcance. Las funciones inteligentes y la tecnología responsiva
+                            hacen que la conducción sea más sencilla.</p>
+                    </div>
+
+
+                </div>
+
+                <div>
+
+                    <div class="panel-visual">
+
+                        <div class="marco-imagen">
+                            <div class="contenedor-fotografia"><img class="fotografia-vehiculo"
+                                    src="../media/galería/coche-7.jpg" alt=""></div>
+                        </div>
+
+
+                    </div>
+                    <div class="bloque-informativo">
+                        <h2 class="encabezado-caracteristica">RENDIMIENTO</h2>
+                        <p class="descripcion-caracteristica">Ruedas de precisión y sistemas de alto rendimiento
+                            garantizan una conducción suave y segura. Cada detalle está diseñado para ofrecer agilidad,
+                            potencia y control.</p>
+                    </div>
+
+
+                </div>
+
+
+                <div>
+
+                    <div class="panel-visual">
+
+                        <div class="marco-imagen">
+                            <div class="contenedor-fotografia"><img class="fotografia-vehiculo"
+                                    src="../media/galería/coche-8.webp" alt=""></div>
+                        </div>
+
+
+                    </div>
+                    <div class="bloque-informativo">
+                        <h2 class="encabezado-caracteristica">FIRMA TRASERA</h2>
+                        <p class="descripcion-caracteristica">Un diseño trasero impactante completa el perfil dinámico
+                            del Novair. Las luces traseras y los paneles esculpidos crean un aspecto inconfundiblemente
+                            eléctrico.</p>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <script>
+                document.querySelectorAll('.slider').forEach((slider) => {
+                    let isDown = false;
+                    let startX;
+                    let scrollLeft;
+
+                    slider.addEventListener('mousedown', (e) => {
+                        isDown = true;
+                        slider.classList.add('active');
+                        startX = e.pageX - slider.offsetLeft;
+                        scrollLeft = slider.scrollLeft;
+                    });
+
+                    slider.addEventListener('mouseleave', () => {
+                        isDown = false;
+                    });
+
+                    slider.addEventListener('mouseup', () => {
+                        isDown = false;
+                    });
+
+                    slider.addEventListener('mousemove', (e) => {
+                        if (!isDown) return;
+                        e.preventDefault();
+                        const x = e.pageX - slider.offsetLeft;
+                        const walk = (x - startX) * 2;
+                        slider.scrollLeft = scrollLeft - walk;
+                    });
+                });
+            </script>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Detalles del diseño del coche -->
+        <div class="section section13" id="section13">
+            <div class="contenido-ingenieria">
+
+                <div class="bloque-presentacion">
+                    <div class="contenedor-texto">
+                        <p class="titulo-ingenieria">DISEÑADO <br> PARA EL MAÑANA</p>
+
+                        <div class="descripcion-ingenieria">
+                            <p>
+                                Diseñado para el confort, el espacio y la seguridad en todo tipo de terreno, el cuerpo
+                                del SUV está construido para ofrecer una conducción suave y estable en cualquier
+                                entorno. La ingeniería inteligente y la distribución equilibrada del peso aseguran un
+                                control sin esfuerzo, tanto en la ciudad como en viajes largos
+                            </p>
+
+                            <p>
+                                Materiales premium y una avanzada arquitectura eléctrica se combinan para crear un
+                                interior espacioso y refinado, junto con una presencia exterior duradera. El resultado
+                                es un SUV eléctrico moderno que fusiona practicidad diaria, tecnología avanzada y
+                                rendimiento sostenible.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="succsd"><img class="sdrf" src="../media/galería/coche-9.webp" alt=""></div>
+
+
+
+
+                </div>
+
+                <div class="succsd2"><img class="sdrf2" src="../media/galería/coche-10.webp" alt=""></div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Tecnología del vehículo -->
+
+
+        <div class="section section14" id="section14">
+            <div>
+                <p class="titulo-principal">DONDE EL MOVIMIENTO <br> DESPIERTA TU VIAJE</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="section section15" id="section15">
+            <div class="envoltorio-contenido">
+                <div class="envoltorio-texto">
+                    <p class="Encabezado">INTELIGENCIA ELÉCTRICA AVANZADA</p>
+                    <p class="Contenido-1">El SUV Novair está construido sobre una plataforma eléctrica de vanguardia,
+                        combinando eficiencia de larga distancia con torque instantáneo para una conducción suave y
+                        sensible. La gestión inteligente de la energía y la frenada regenerativa maximizan la vida útil
+                        de la batería, al tiempo que reducen el impacto ambiental.
+                    </p>
+                    <p class="Contenido">Un conjunto de sistemas inteligentes te mantiene conectado y en control, desde
+                        modos de conducción adaptativos hasta un sistema de infoentretenimiento fluido y funciones de
+                        asistencia al conductor.</p>
+                    <div class="confid">
+                        <a href="html/galeria.html" class="contenedor-boton">
+                            Descubre
+                            <i class="fa-solid fa-arrow-right flecha-diagonal"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="envoltorio-imagen-166">
+                    <img class="imagen-1" src="../media/galería/interior-2.png" alt="pintura-del-sala-de-estar">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Nuestros servicios -->
+        <div class="section section16" id="section16">
+
+            <p class="titulo-principal">DESCUBRE MÁS <br> SOBRE EL NOVAIR</p>
+
+
+
+
+        </div>
+
+
+
+        <div class="section section17" id="section17">
+            <div class="contenedor-servicios">
+                <div class="tarjeta-servicio-1">
+                    <div class="contenedor-imagen"><img class="imagen-servicio" src="../media/galería/coche-11.jpg"
+                            alt="Image"></div>
+                    <h3 class="titulo-servicio">Siente la Conducción</h3>
+                    <p class="descripcion-servicio">Prueba el vehículo para evaluar su rendimiento, confort y
+                        características.
+                    </p>
+                    <a href="html/galeria.html" class=" boton-descubre-1">
+                        Descubre
+                        <i class="fa-solid fa-arrow-right flecha-diagonal-1"></i>
+                    </a>
+                </div>
+
+                <div class="tarjeta-servicio-2">
+                    <div class="contenedor-imagen"><img class="imagen-servicio" src="../media/galería/interior-3.jpg"
+                            alt="Image"></div>
+                    <h3 class="titulo-servicio">Actualización de firmware</h3>
+                    <p class="descripcion-servicio">Instala las últimas actualizaciones de software para mejorar la
+                        funcionalidad, la seguridad y el rendimiento general.</p>
+                    <a href="html/galeria.html" class="boton-descubre-1">
+                        Descubre
+                        <i class="fa-solid fa-arrow-right flecha-diagonal-1"></i>
+                    </a>
+                </div>
+
+                <div class="tarjeta-servicio-3">
+                    <div class="contenedor-imagen"><img class="imagen-servicio" src="../media/galería/coche-13.jpg"
+                            alt="Image"></div>
+                    <h3 class="titulo-servicio">Personalización del vehículo</h3>
+                    <p class="descripcion-servicio">Configura los ajustes y preferencias del vehículo para adaptarlos a
+                        tus necesidades individuales.</p>
+                    <a href="html/galeria.html" class="boton-descubre-1">
+                        Descubre
+                        <i class="fa-solid fa-arrow-right flecha-diagonal-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Esta es la sección del pie de página -->
+        <div class="section section18" id="section18">
+            <div class="pie">
+                <div class="footer-acciones">
+                    <p class="footer-accion">NOVEDADES</p>
+                    <p class="footer-accion">CONFIGURADOR</p>
+                    <p class="footer-accion">RESERVAR </p>
+                    <img class="logo-6" src="../media/contacto/logo1.png" alt="Aurelion-Logo">
+
+                    <p class="footer-accion">CONCESIONARIOS</p>
+                    <p class="footer-accion">CATÁLOGO</p>
+                    <p class="footer-accion">PRUEBAS</p>
+                </div>
+
+                <div class="pie-separador-1"></div>
+
+                <div class="pie-1">
+                    <div class="pie-enlaces">
+                        <p class="titulo-enlace-1">QUIÉNES SOMOS</p>
+                        <p class="titulo-enlace-1">CONTACTO</p>
+                        <p class="titulo-enlace-1">ACCESIBILIDAD</p>
+                        <p class="titulo-enlace-1">TRABAJA CON NOSOTROS</p>
+                        <p class="titulo-enlace-1">AURELION MOTORSPORTS</p>
+                        <p class="titulo-enlace-1">SUSCRÍBETE AL BOLETÍN</p>
+                        <p class="titulo-enlace-1">NOTAS DE PRENSA</p>
+                        <p class="titulo-enlace-1">POLÍTICA DE PRIVACIDAD</p>
+                        <p class="titulo-enlace-1">GESTIONAR PREFERENCIAS</p>
+                        <p class="titulo-enlace-1">CONFIGURACIÓN DE COOKIES</p>
+
+                        <div class="enlaces-media">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="moduule">
+
+
+
+                        <div class="pie-menu">
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">SERVICIO Y MANTENIMIENTO</p>
+                                <p class="titulo-enlace-2">PROGRAMAR UNA CITA</p>
+                                <p class="titulo-enlace-2">PLAN DE MANTENIMIENTO</p>
+                                <p class="titulo-enlace-2">REVISIÓN DEL VEHÍCULO</p>
+                                <p class="titulo-enlace-2">SERVICIO TÉCNICO</p>
+                            </div>
+
+
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">CONCESIONARIOS</p>
+                                <p class="titulo-enlace-2">BUSCAR CONCESIONARIO</p>
+                                <p class="titulo-enlace-2">SOLICITAR UNA PRUEBA DE CONDUCCIÓN</p>
+                                <p class="titulo-enlace-2">HORARIOS Y UBICACIONES</p>
+                                <p class="titulo-enlace-2">SERVICIOS DEL CONCESIONARIO</p>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="pie-menu">
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">GARANTÍA</p>
+                                <p class="titulo-enlace-2">COBERTURA DE GARANTÍA</p>
+                                <p class="titulo-enlace-2">CONDICIONES DE GARANTÍA</p>
+                                <p class="titulo-enlace-2">AMPLIACIÓN DE GARANTÍA</p>
+                                <p class="titulo-enlace-2">RECLAMACIONES DE GARANTÍA</p>
+
+                            </div>
+
+
+
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">RECAMBIOS Y ACCESORIOS</p>
+                                <p class="titulo-enlace-2">ACCESORIOS ORIGINALES</p>
+                                <p class="titulo-enlace-2">PIEZAS DE RECAMBIO</p>
+                                <p class="titulo-enlace-2">PERSONALIZACIÓN</p>
+                                <p class="titulo-enlace-2">CATÁLOGO DE PRODUCTOS</p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="pie-menu">
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">PROPIETARIOS</p>
+                                <p class="titulo-enlace-2">MI CUENTA</p>
+                                <p class="titulo-enlace-2">MANUALES DEL VEHÍCULO</p>
+                                <p class="titulo-enlace-2">HISTORIAL DE MANTENIMIENTO</p>
+                                <p class="titulo-enlace-2">REGISTRAR MI VEHÍCULO</p>
+                            </div>
+
+
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">ASISTENCIA EN CARRETERA</p>
+                                <p class="titulo-enlace-2">SOLICITAR ASISTENCIA</p>
+                                <p class="titulo-enlace-2">SERVICIO 24/7</p>
+                                <p class="titulo-enlace-2">COBERTURA DE EMERGENCIA</p>
+                                <p class="titulo-enlace-2">CONTACTOS DE URGENCIA</p>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="pie-menu">
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">AYUDA Y SOPORTE</p>
+                                <p class="titulo-enlace-2">CENTRO DE AYUDA</p>
+                                <p class="titulo-enlace-2">PREGUNTAS FRECUENTES</p>
+                                <p class="titulo-enlace-2">CONTACTAR CON SOPORTE</p>
+                                <p class="titulo-enlace-2">ASISTENCIA TÉCNICA</p>
+                            </div>
+
+
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">DESCARGAS</p>
+                                <p class="titulo-enlace-2">MANUALES</p>
+                                <p class="titulo-enlace-2">FOLLETOS</p>
+                                <p class="titulo-enlace-2">ACTUALIZACIONES DE SOFTWARE</p>
+                                <p class="titulo-enlace-2">DOCUMENTACIÓN TÉCNICA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pie-separador-2"></div>
+
+                <div class="pie-legal">
+                    <p class="titulo-aviso">AVISO LEGAL Y SIMULACIÓN</p>
+
+                    <p class="aviso-texto">
+                        ©2008–2026 Aurelion. Este sitio web es un proyecto académico creado únicamente con fines
+                        educativos y de demostración.
+                        No representa una empresa real ni un servicio comercial activo. Toda la información presentada
+                        es ficticia y utilizada exclusivamente
+                        como parte de un ejercicio universitario.
+                    </p>
+
+                    <p class="aviso-texto">
+                        Cualquier similitud con marcas, empresas o servicios existentes es puramente coincidente. Este
+                        proyecto no está afiliado,
+                        asociado ni respaldado por ninguna organización real.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

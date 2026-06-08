@@ -1,0 +1,22 @@
+{
+  "secciones": [
+    {
+      "titulo": "Aurelion presenta el nuevo AX7",
+      "descripcion": "La combinación perfecta de potencia, tecnología y confort.",
+      "cta": "Descubre",
+      "imagen": "media/index/coche-11.webp"
+    },
+    {
+      "titulo": "Nuevos Centros Urbanos",
+      "descripcion": "Nuevos espacios para descubrir la marca y sus vehículos.",
+      "cta": "Descubre",
+      "imagen": "media/index/coche-12.webp"
+    },
+    {
+      "titulo": "Edición Nightfall Series",
+      "descripcion": "Una edición exclusiva con acabados únicos y producción limitada.",
+      "cta": "Descubre",
+      "imagen": "media/index/coche-13.webp"
+    }
+  ]
+}

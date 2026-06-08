@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelion</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.0.0/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="..//js//map.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../media/contacto/AURELION.png">
+</head>
+
+<body>
+
+
+
+
+
+
+    
+
+    <!-- Esta es la sección de la barra de navegación -->
+    <div class="container">
+        <div class="section section1" id="section1">
+
+            <header id="navbar" class="navbar">
+                <div class="barra-navegacion-1">
+                    <p class="rcmd">Consulta nuestras últimas ofertas disponibles</p>
+                </div>
+                <nav class="contenido-barra-navegacion">
+
+                    <div class="logo">
+                        <a class="seccion-logo" href="../index.html">
+                            <img class="logo-1" id="logo-por-defecto" src="../media/contacto/logo1.png" alt="Aurelion-Logo">
+                        </a>
+                    </div>
+        
+                    <ul class="Enlaces-1">
+                        <li><a class="enlace-1" href="../html/galeria.html">Productos</a></li>
+                        <li><a class="enlace-1" href="../html/presupuesto.html">Comprar</a></li>
+                        <li><a class="enlace-C" href="../html/contacto.html">Contacto</a></li>
+                    </ul>
+        
+        
+        
+                    <ul class="Enlaces-2">
+                        <li>
+                            <p class="enlace-A">Ponte en contacto</p>
+                        </li>
+                    
+                        <li>
+                            <div class="botón-1">Nuestra planta</div>
+                        </li>
+                    
+                        <li>
+                            <div class="idioma">
+                                ES
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <script>
+                    const navbar = document.getElementById("navbar");
+                    let lastScrollTop = 0;
+                    const scrollThreshold = 50;
+        
+                    window.addEventListener("scroll", () => {
+                        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        
+                        if (scrollTop > lastScrollTop) {
+        
+                            navbar.style.top = "-100px";
+                        } else {
+        
+                            navbar.style.top = "0";
+                        }
+        
+        
+                        if (scrollTop > scrollThreshold) {
+                            navbar.classList.add("scrolled");
+                        } else {
+                            navbar.classList.remove("scrolled");
+                        }
+        
+                        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+                    });
+                </script>
+        
+            </header>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Mapa e información -->
+
+        <div class="section section2" id="section2">
+
+
+
+            <div class="contenedor-contacto">
+
+
+
+                <div class="imagen-ubicacion">
+                    <p class="nombre-sucursal">CONCESIONARIO<br>AURELION</p>
+                    <p class="localización">Valencia 39.4699, -0.3763</p>
+                    <p class="detalles">
+                        Bienvenido al concesionario oficial AURELION Valencia, el epicentro de innovación, diseño y
+                        rendimiento</p>
+                    <div class="linea-separadora"></div>
+                    <div>
+                        <p class="nombre">CONCESIONARIO AURELION</p>
+                        <p>+12 345 678 98</p>
+                        
+
+                    </div>
+                    <div class="linea-separadora"></div>
+
+
+                    <div class="horario">
+
+                        <div class="horario-semana">
+
+
+                            <div class="días">
+                                <p class="día">Lunes – Miércoles</p>
+                            </div>
+
+                            <div class="horas">
+                                <p class="tiempo">09:00 – 18:00</p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="horario-semana">
+
+
+                            <div class="días">
+                                <p class="día">Jueves</p>
+                            </div>
+
+                            <div class="horas">
+                                <p class="tiempo">10:00 – 18:00</p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="horario-semana">
+
+
+                            <div class="días">
+                                <p class="día">Viernes</p>
+                            </div>
+
+                            <div class="horas">
+                                <p class="tiempo"> 9:00 – 17:00</p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="horario-semana">
+
+
+                            <div class="días">
+                                <p class="día">Sábado</p>
+                            </div>
+
+                            <div class="horas">
+                                <p class="tiempo"> 15:00 – 17:00
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="horario-semana">
+
+
+                            <div class="días">
+                                <p class="día">Domingo</p>
+                            </div>
+
+                            <div class="horas">
+                                <p class="tiempo">Cerrado</p>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="linea-separadora"></div>
+
+
+                    <div class="btn-contacto">Contacta con nuestro concesionario</div>
+
+
+
+
+
+
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+
+
+
+
+
+
+
+<!-- Enviar información -->
+
+<div class="section section3" id="seccion-pie">
+
+    <div class="contenedor-enlaces">
+
+        <div class="grupo-enlaces">
+            <p class="titulo-grupo">SERVICIOS DEL VEHÍCULO</p>
+            <p class="enlace-item">ASISTENCIA EN CARRETERA 24/7</p>
+            <p class="enlace-item">RESCATE Y REMOLQUE</p>
+            <p class="enlace-item">MANTENIMIENTO PROGRAMADO</p>
+            <p class="enlace-item">DIAGNÓSTICO A DISTANCIA</p>
+        </div>
+
+        <div class="grupo-enlaces">
+            <p class="titulo-grupo">EXPERIENCIA DE CONDUCCIÓN</p>
+            <p class="enlace-item">RESERVAR PRUEBA DE MANEJO</p>
+            <p class="enlace-item">CONFIGURADOR DE MODELOS</p>
+            <p class="enlace-item">INFORMACIÓN DE VEHÍCULOS</p>
+            <p class="enlace-item">TECNOLOGÍA A BORDO</p>
+        </div>
+
+        <div class="grupo-enlaces">
+            <p class="titulo-grupo">PROPIETARIOS</p>
+            <p class="enlace-item">PORTAL DEL CLIENTE</p>
+            <p class="enlace-item">GARANTÍA Y COBERTURA</p>
+            <p class="enlace-item">ACTUALIZACIONES DE SOFTWARE</p>
+            <p class="enlace-item">MANUALES Y SOPORTE</p>
+        </div>
+
+    </div>
+
+    <div class="contenedor-formulario">
+
+        <div class="bloque-formulario">
+
+            <p class="titulo-buscador">ENCUENTRA UN CONCESIONARIO</p>
+
+            <div class="campo-formulario">
+                <input class="campo-texto" type="text" placeholder="Código postal">
+            </div>
+            
+            <div class="bloque-texto">
+                <p class="texto-secundario">Localización del concesionario</p>
+                <p class="texto-parrafo">
+                    Introduce tu código postal o ciudad para encontrar los puntos de venta, 
+                    servicios oficiales y centros de atención más cercanos a tu ubicación.
+                </p>
+            </div>
+            
+            <div class="campo-formulario">
+                <input class="campo-texto" type="text" placeholder="Ciudad o localidad">
+            </div>
+
+        </div>
+
+        <div class="contenedor-boton">
+            <a class="boton-enviar">ENVIAR SOLICITUD</a>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Esta es la sección del pie de página -->
+
+        <div class="section section4" id="section4">
+            <div class="pie">
+                <div class="footer-acciones">
+                    <p class="footer-accion">NOVEDADES</p>
+                    <p class="footer-accion">CONFIGURADOR</p>
+                    <p class="footer-accion">RESERVAR </p>
+                    <img class="logo-6" src="../media/contacto/logo1.png" alt="Aurelion-Logo">
+
+                    <p class="footer-accion">CONCESIONARIOS</p>
+                    <p class="footer-accion">CATÁLOGO</p>
+                    <p class="footer-accion">PRUEBAS</p>
+                </div>
+
+                <div class="pie-separador-1"></div>
+
+                <div class="pie-1">
+                    <div class="pie-enlaces">
+                        <p class="titulo-enlace-1">QUIÉNES SOMOS</p>
+                        <p class="titulo-enlace-1">CONTACTO</p>
+                        <p class="titulo-enlace-1">ACCESIBILIDAD</p>
+                        <p class="titulo-enlace-1">TRABAJA CON NOSOTROS</p>
+                        <p class="titulo-enlace-1">AURELION MOTORSPORTS</p>
+                        <p class="titulo-enlace-1">SUSCRÍBETE AL BOLETÍN</p>
+                        <p class="titulo-enlace-1">NOTAS DE PRENSA</p>
+                        <p class="titulo-enlace-1">POLÍTICA DE PRIVACIDAD</p>
+                        <p class="titulo-enlace-1">GESTIONAR PREFERENCIAS</p>
+                        <p class="titulo-enlace-1">CONFIGURACIÓN DE COOKIES</p>
+
+                        <div class="enlaces-media">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="moduule">
+
+
+
+                        <div class="pie-menu">
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">SERVICIO Y MANTENIMIENTO</p>
+                                <p class="titulo-enlace-2">PROGRAMAR UNA CITA</p>
+                                <p class="titulo-enlace-2">PLAN DE MANTENIMIENTO</p>
+                                <p class="titulo-enlace-2">REVISIÓN DEL VEHÍCULO</p>
+                                <p class="titulo-enlace-2">SERVICIO TÉCNICO</p>
+                            </div>
+
+
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">CONCESIONARIOS</p>
+                                <p class="titulo-enlace-2">BUSCAR CONCESIONARIO</p>
+                                <p class="titulo-enlace-2">SOLICITAR UNA PRUEBA DE CONDUCCIÓN</p>
+                                <p class="titulo-enlace-2">HORARIOS Y UBICACIONES</p>
+                                <p class="titulo-enlace-2">SERVICIOS DEL CONCESIONARIO</p>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="pie-menu">
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">GARANTÍA</p>
+                                <p class="titulo-enlace-2">COBERTURA DE GARANTÍA</p>
+                                <p class="titulo-enlace-2">CONDICIONES DE GARANTÍA</p>
+                                <p class="titulo-enlace-2">AMPLIACIÓN DE GARANTÍA</p>
+                                <p class="titulo-enlace-2">RECLAMACIONES DE GARANTÍA</p>
+
+                            </div>
+
+
+
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">RECAMBIOS Y ACCESORIOS</p>
+                                <p class="titulo-enlace-2">ACCESORIOS ORIGINALES</p>
+                                <p class="titulo-enlace-2">PIEZAS DE RECAMBIO</p>
+                                <p class="titulo-enlace-2">PERSONALIZACIÓN</p>
+                                <p class="titulo-enlace-2">CATÁLOGO DE PRODUCTOS</p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="pie-menu">
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">PROPIETARIOS</p>
+                                <p class="titulo-enlace-2">MI CUENTA</p>
+                                <p class="titulo-enlace-2">MANUALES DEL VEHÍCULO</p>
+                                <p class="titulo-enlace-2">HISTORIAL DE MANTENIMIENTO</p>
+                                <p class="titulo-enlace-2">REGISTRAR MI VEHÍCULO</p>
+                            </div>
+
+
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">ASISTENCIA EN CARRETERA</p>
+                                <p class="titulo-enlace-2">SOLICITAR ASISTENCIA</p>
+                                <p class="titulo-enlace-2">SERVICIO 24/7</p>
+                                <p class="titulo-enlace-2">COBERTURA DE EMERGENCIA</p>
+                                <p class="titulo-enlace-2">CONTACTOS DE URGENCIA</p>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="pie-menu">
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">AYUDA Y SOPORTE</p>
+                                <p class="titulo-enlace-2">CENTRO DE AYUDA</p>
+                                <p class="titulo-enlace-2">PREGUNTAS FRECUENTES</p>
+                                <p class="titulo-enlace-2">CONTACTAR CON SOPORTE</p>
+                                <p class="titulo-enlace-2">ASISTENCIA TÉCNICA</p>
+                            </div>
+
+
+                            <div class="pie-enlaces">
+                                <p class="titulo-pie">DESCARGAS</p>
+                                <p class="titulo-enlace-2">MANUALES</p>
+                                <p class="titulo-enlace-2">FOLLETOS</p>
+                                <p class="titulo-enlace-2">ACTUALIZACIONES DE SOFTWARE</p>
+                                <p class="titulo-enlace-2">DOCUMENTACIÓN TÉCNICA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pie-separador-2"></div>
+
+                <div class="pie-legal">
+                    <p class="titulo-aviso">AVISO LEGAL Y SIMULACIÓN</p>
+
+                    <p class="aviso-texto">
+                        ©2008–2026 Aurelion. Este sitio web es un proyecto académico creado únicamente con fines
+                        educativos y de demostración.
+                        No representa una empresa real ni un servicio comercial activo. Toda la información presentada
+                        es ficticia y utilizada exclusivamente
+                        como parte de un ejercicio universitario.
+                    </p>
+
+                    <p class="aviso-texto">
+                        Cualquier similitud con marcas, empresas o servicios existentes es puramente coincidente. Este
+                        proyecto no está afiliado,
+                        asociado ni respaldado por ninguna organización real.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
