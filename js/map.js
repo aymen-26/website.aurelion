@@ -1,99 +1,119 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    const valencia = [39.4699, -0.3763];
 
-    var valencia = [39.4699, -0.3763];
-
- 
-    var map = L.map('map').setView(valencia, 14);
+    const map = L.map("map").setView(valencia, 14);
 
     map.scrollWheelZoom.disable();
 
-  
     L.tileLayer(
-        'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
-        {
-            attribution: '&copy; <a href="https://carto.com/">CartoDB</a>',
-        }
+        "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+        { attribution: "&copy; CartoDB" }
     ).addTo(map);
 
 
     L.marker(valencia)
         .addTo(map)
-        .bindPopup("Valencia, Spain")
-        .openPopup();
+        .bindPopup("Valencia, Spain");
 
-    if (navigator.geolocation) {
+    if (!navigator.geolocation) {
+        alert("Geolocation is not supported by your browser.");
+        return;
+    }
 
-        navigator.geolocation.getCurrentPosition(function (position) {
+    navigator.geolocation.getCurrentPosition(
 
-            var userLocation = [
+        async function (position) {
+            const userLocation = [
                 position.coords.latitude,
                 position.coords.longitude
             ];
 
-            var icon = L.icon({
-                iconUrl: 'black-pin.png',
+            console.log("USER LOCATION:", userLocation);
+
+            if (!userLocation || userLocation[0] === 0 || userLocation[1] === 0) {
+                alert("Invalid location detected");
+                return;
+            }
+
+            const icon = L.icon({
+                iconUrl: "black-pin.png",
                 iconSize: [25, 41],
                 iconAnchor: [12, 41]
             });
-            
-            L.marker(userLocation, { icon }).addTo(map);
 
-            var bounds = L.latLngBounds([valencia, userLocation]);
-            map.fitBounds(bounds, { padding: [50, 50] });
+            L.marker(userLocation, { icon })
+                .addTo(map)
+                .bindPopup("Your Location");
 
-  
-            var routeURL =
-                `https://api.openrouteservice.org/v2/directions/driving-car?api_key=YOUR_API_KEY&start=${userLocation[1]},${userLocation[0]}&end=${valencia[1]},${valencia[0]}`;
+            try {
+                const apiKey = "";
 
-            fetch(routeURL)
-                .then(response => response.json())
-                .then(data => {
+    
+                const routeURL =
+                    `https://api.openrouteservice.org/v2/directions/driving-car` +
+                    `?api_key=${apiKey}` +
+                    `&start=${userLocation[1]},${userLocation[0]}` +
+                    `&end=${valencia[1]},${valencia[0]}` +
+                    `&geometry_format=geojson`;
 
-                    var routeCoords =
-                        data.routes[0].geometry.coordinates.map(
-                            coord => [coord[1], coord[0]]
-                        );
+                console.log("ROUTE URL:", routeURL);
 
-                    L.polyline(routeCoords, {
-                        color: 'blue',
-                        weight: 4
-                    }).addTo(map);
+                const response = await fetch(routeURL);
 
-                })
-                .catch(error =>
-                    console.error("Error fetching route:", error)
+                console.log("HTTP Status:", response.status);
+
+                const data = await response.json();
+
+                console.log("API Response:", data);
+
+                if (!response.ok || data.error) {
+                    throw new Error(data.error?.message || `HTTP ${response.status}`);
+                }
+
+       
+                const routeCoords = data.features[0].geometry.coordinates.map(
+                    coord => [coord[1], coord[0]] 
                 );
 
-        }, function () {
+             
+                const routeLine = L.polyline(routeCoords, {
+                    color: "#00BFFF",
+                    weight: 5,
+                    opacity: 0.9
+                }).addTo(map);
 
+          
+                map.fitBounds(routeLine.getBounds(), { padding: [40, 40] });
+
+            } catch (error) {
+                console.error("Route error:", error);
+                alert("Could not load route: " + error.message);
+            }
+
+        },
+
+        function (error) {
+            console.error(error);
             alert("Location access denied.");
+        },
 
-        });
-
-    } else {
-
-        alert("Geolocation is not supported by your browser.");
-
-    }
-
+        {
+            enableHighAccuracy: true,
+            timeout: 10000,
+            maximumAge: 0
+        }
+    );
+    
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const line = L.polyline([
+    [startLat, startLng],
+    [userLat, userLng]
+  ], {
+    color: 'red',
+    weight: 4
+  }).addTo(map);
 
 
 
