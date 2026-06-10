@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 .bindPopup("Your Location");
 
             try {
-                const apiKey = "";
+                const apiKey = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImI5ZDhkOWFjMmUzZjQ5NWViNDM0ZjE2MWY2ZjQxODY5IiwiaCI6Im11cm11cjY0In0=";
 
     
                 const routeURL =
@@ -107,12 +107,13 @@ document.addEventListener("DOMContentLoaded", function () {
     
 });
 
-
-
-
-
-
-
+const line = L.polyline([
+    [startLat, startLng],
+    [userLat, userLng]
+  ], {
+    color: 'red',
+    weight: 4
+  }).addTo(map);
 
 
 
