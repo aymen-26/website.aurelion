@@ -107,13 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
     
 });
 
-const line = L.polyline([
-    [startLat, startLng],
-    [userLat, userLng]
-  ], {
-    color: 'red',
-    weight: 4
-  }).addTo(map);
 
 
 
